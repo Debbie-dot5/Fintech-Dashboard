@@ -49,7 +49,7 @@ const InvestmentPortfolio = () => {
       tooltip: {
         callbacks: {
           label: (tooltipItem: TooltipItem<'doughnut'>) => {
-            const value = tooltipItem.raw.toLocaleString()
+            const value = (tooltipItem.raw as number).toLocaleString()
             return `$${value}`
           },
         },

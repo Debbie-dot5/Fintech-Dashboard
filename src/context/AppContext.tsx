@@ -8,6 +8,7 @@ interface AppContextType {
   accountData: AccountData | null
   investments: Investment[]
   savingsGoals: SavingsGoal[]
+  setSavingsGoals: React.Dispatch<React.SetStateAction<SavingsGoal[]>>
   transactions: Transaction[]
   isLoading: boolean
   error: string | null
@@ -55,6 +56,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         accountData,
         investments,
         savingsGoals,
+        setSavingsGoals,
         transactions,
         isLoading,
         error,

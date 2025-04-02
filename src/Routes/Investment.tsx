@@ -62,12 +62,13 @@ const Investments = () => {
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie data={data} cx="50%" cy="50%" innerRadius={60} outerRadius={80} paddingAngle={5} dataKey="value">
-                  {data.map((entry, index) => (
+                  {data.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
                       onClick={() => setSelectedInvestment(index)}
                       style={{ cursor: "pointer" }}
+                      
                     />
                   ))}
                 </Pie>

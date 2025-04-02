@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { PlusCircle, Pencil, Trash2, DollarSign } from "lucide-react";
-import { useAppContext } from "../context/AppContext"; // Import AppContext hook
+import { useAppContext } from "../context/AppContext"; 
 import { SavingsGoal } from "../types";
 
 const Savings = () => {
-  const { savingsGoals, setSavingsGoals } = useAppContext(); // Use savingsGoals from context
+  const { savingsGoals, setSavingsGoals } = useAppContext(); 
   const [showAddGoal, setShowAddGoal] = useState(false);
   const [editingGoal, setEditingGoal] = useState<SavingsGoal | null>(null);
 

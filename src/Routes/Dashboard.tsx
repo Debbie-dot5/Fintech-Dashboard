@@ -6,7 +6,7 @@ import IncomeExpenseChart from "../components/IncomeExpenseChart"
 import { useAppContext } from "../context/AppContext"
 
 const Dashboard = () => {
-  const { isLoading, error } = useAppContext()
+  const { error } = useAppContext()
 
   if (error) {
     return (
