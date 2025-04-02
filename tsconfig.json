@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": "./",
+    "paths": {
+      "@types/*": ["types/*"]
+    }
+  },
+  "include": ["src/**/*", "types/**/*"],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
