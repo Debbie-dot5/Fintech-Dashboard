@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "composite": true,
     "baseUrl": "./",
     "paths": {
       "@types/*": ["types/*"]
-    }
+    },
+    "target": "es2020",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true
   },
-  "include": ["src/**/*", "types/**/*"],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "include": ["src/**/*", "vite.config.ts", "types/**/*"],
+  "exclude": ["node_modules", "dist", "build"]
 }

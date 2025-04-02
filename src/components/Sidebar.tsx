@@ -45,7 +45,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <Link
                 to="/"
                 className={`flex items-center px-4 py-3 text-sm rounded-lg ${
-                  location.pathname === "/" ? "btn-primary text-white-200" : "text-gray-600 hover:bg-gray-100"
+                  location.pathname === "/" ? "btn-primary text-white" : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
                 <Home className="h-5 w-5 mr-3" />
@@ -57,7 +57,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 to="/investments"
                 className={`flex items-center px-4 py-3 text-sm rounded-lg ${
                   location.pathname === "/investments"
-                    ? "btn-primary text-white-200"
+                    ? "btn-primary text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -70,7 +70,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 to="/savings"
                 className={`flex items-center px-4 py-3 text-sm rounded-lg ${
                   location.pathname === "/savings"
-                    ? "btn-primary text-white-200"
+                    ? "btn-primary text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -83,7 +83,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 to="/transactions"
                 className={`flex items-center px-4 py-3 text-sm rounded-lg ${
                   location.pathname === "/transactions"
-                    ? "btn-primary text-white-200"
+                    ? "btn-primary text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -96,7 +96,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 to="/settings"
                 className={`flex items-center px-4 py-3 text-sm rounded-lg ${
                   location.pathname === "/settings"
-                    ? "btn-primary text-white-200"
+                    ? "btn-primary text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
